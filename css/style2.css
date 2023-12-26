@@ -1,0 +1,178 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("font/Montserrat/Montserrat-Regular.ttf")
+  }
+
+* {
+      box-sizing: border-box;
+    }
+  
+    body {
+      background-image: url("https://cdn.discordapp.com/attachments/998202486940770316/1189126233909379072/FNaF_Background.jpg?ex=659d071b&is=658a921b&hm=6d2a6e7e9c493f124097ce615c485942157d7491d5c5d101556be691137b8b96&");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+    }
+  
+  #toggleButton {
+      color: #000;
+      background-color: #fff;
+      transition: color 0.5s, background-color 0.5s;
+  }
+  
+  .dark-mode #toggleButton {
+      color: #fff;
+      background-color: #000;
+  }
+
+  .container {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  header {
+    background: #000000;
+  }
+  
+  header::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+    
+    .logo {
+      float: left;
+      padding: 10px 0;
+    }
+    
+    nav {
+      float: right;
+    }
+    
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    
+    nav li {
+      display: inline-block;
+      margin-left: 70px;
+      padding-top: 23px;
+    
+      position: relative;
+    }
+    
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+    
+    nav a:hover {
+      color: #ff0000;
+    }
+    
+    nav a::before {
+      content: '';
+      display: block;
+      height: 5px;
+      background-color: #ff0000;
+    
+      position: absolute;
+      top: 0;
+      width: 0%;
+    
+      transition: all ease-in-out 250ms;
+    }
+    
+    nav a:hover::before {
+      width: 100%;
+    }
+    
+    .img:hover .hover_img {
+  
+      display: inline;
+      
+      }
+  
+    .img {
+  
+      position: absolute;
+      
+      }
+  
+      .hover_img {
+  
+          position: absolute;
+          
+          top: 0;
+          
+          left: 0;
+          
+          display: none;
+          
+          }
+  
+      .presentation-text {
+  
+          text-align:center;
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          color: white;
+  
+      }
+  
+      .creator-text {
+  
+          text-align:center;
+          display: flex;
+          width: 1000px;
+          flex-direction: row;
+          background: rgb(75, 0, 75);
+          position: relative;
+          color: white;
+          border-radius: 20px;
+  
+      }
+  
+      .credits1 {
+  
+          color: #000000;
+          width: 45%;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          background: rgb(255, 255, 255);
+          justify-content: center;
+          align-items: center;
+          border-radius: 20px;
+  
+      }
+
+      .outer-container{
+        display: flex;  
+        flex-direction: row;
+    }
+
+    .credits2 {
+
+          color: #000000;
+          width: 45%;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          background: rgb(255, 255, 255);
+          align-items: center;
+          border-radius: 20px;        
+
+
+    }

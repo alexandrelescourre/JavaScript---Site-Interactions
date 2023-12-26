@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url("font/Montserrat/Montserrat-Regular.ttf")
+    }
+
+* {
+	box-sizing: border-box;
+  }
+
+body {
+	margin: 0;
+	background-image: url("https://cdn.discordapp.com/attachments/998202486940770316/1173210345666527273/Office.gif?ex=65632047&is=6550ab47&hm=8f0c87bc5c4dfdc60a04ff782fd3b254342125246459cd8e0cf511021327d899&f");
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	color: #ffffff;
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+header {
+  background: #000000;
+}
+
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+  }
+  
+  .logo {
+	float: left;
+	padding: 10px 0;
+  }
+  
+  nav {
+	float: right;
+  }
+  
+  nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  
+  nav li {
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 23px;
+  
+	position: relative;
+  }
+  
+  nav a {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+  }
+  
+  nav a:hover {
+	color: #ff0000;
+  }
+  
+  nav a::before {
+	content: '';
+	display: block;
+	height: 5px;
+	background-color: #ff0000;
+  
+	position: absolute;
+	top: 0;
+	width: 0%;
+  
+	transition: all ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+	width: 100%;
+  }
+  
+  .img:hover .hover_img {
+
+	display: inline;
+	
+	}
+
+  .img {
+
+	position: absolute;
+	
+	}
+
+	.hover_img {
+
+		position: absolute;
+		
+		top: 0;
+		
+		left: 0;
+		
+		display: none;
+		
+		}
+
+	.presentation-text {
+
+		text-align:center;
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		color: white;
+
+	}
+	

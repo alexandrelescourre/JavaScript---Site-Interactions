@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion / Création de compte</title>
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>
+
+    <div class="container">
+        <form onsubmit="return validateRegistrationForm()">
+            <h2 id="formTitle">Connexion</h2>
+            <label for="username">Nom d'utilisateur:</label>
+            <input type="text" id="username">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+
+            <label for="password">Mot de passe:</label>
+            <input type="password" id="password">
+
+            <fieldset>
+                <legend>Voulez-vous connaitre tout le lore de FNaF?</legend>
+                <select name="" id="">
+                    <option value="Oui">Oui</option>
+                    <option value="Non">Non</option>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                    <legend>Quel genre de fan êtes-vous ?</legend>
+                    <label for="b">Basique</label>
+                    <input type="radio" name="genre" id="b">
+                    <label for="i">Moyen</label>
+                    <input type="radio" name="genre" id="i">
+                    <label for="p">Hardcore</label>
+                    <input type="radio" name="genre" id="p">
+            </fieldset>
+
+            <label for="confirmPassword" id="confirmPasswordLabel" style="display:none;">Confirmer le mot de passe:</label>
+            <input type="password" id="confirmPassword" style="display:none;">
+
+            <button type="submit">S'inscrire</button>
+        </form>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
